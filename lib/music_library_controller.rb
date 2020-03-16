@@ -72,7 +72,7 @@ class MusicLibraryController
 
     self.list_songs
 
-    
+    user_input = gets.strip
 
   end
 
