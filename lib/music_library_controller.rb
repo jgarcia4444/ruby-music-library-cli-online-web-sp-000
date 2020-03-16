@@ -22,10 +22,8 @@ class MusicLibraryController
   end
 
   def list_songs
-    songs = Song.all.sorted
+    songs = Song.all.sort
     print songs
   end
-
-  self.list_songs
 
 end
