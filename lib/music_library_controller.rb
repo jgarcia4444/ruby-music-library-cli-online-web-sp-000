@@ -32,7 +32,7 @@ class MusicLibraryController
       when 'play song'
         self.play_song
       else
-        puts "Sorry, I didn't understand that command"
+        puts "Sorry, I didn't understand that command."
     end
   end
 
