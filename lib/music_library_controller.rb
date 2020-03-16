@@ -70,7 +70,7 @@ class MusicLibraryController
 
     puts "Which song number would you like to play?"
 
-    self.list_songs
+    list_songs
 
     user_input = gets.strip
 
