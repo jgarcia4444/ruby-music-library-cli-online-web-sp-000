@@ -32,7 +32,9 @@ class MusicLibraryController
 
   def list_artists
     artists = Artist.all.sort {|x, y| x.name <=> y.name}
-    artists.each do |artist|
+
+    artists.each_with_index do |artist, i|
+      puts "#{}"
     end
   end
 
