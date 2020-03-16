@@ -22,8 +22,8 @@ class MusicLibraryController
   end
 
   def list_songs
-    songs = Song.all.sort
-    print songs
+    songs = Song.all.sort {|x, y| x <=> y}
+
   end
 
 end
