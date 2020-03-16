@@ -18,6 +18,9 @@ class MusicLibraryController
     user_input = gets.strip
     while user_input != "exit"
       user_input = gets.strip
+      case user_input
+      when 'list songs'
+        self.list_songs
     end
   end
 
