@@ -22,7 +22,7 @@ class MusicLibraryController
   end
 
   def list_songs
-    songs = Song.all.sort {|x, y| x <=> y}
+    songs = Song.all.sort {|x, y| x.name <=> y.name}
     counter = 1
     songs.each do |song|
       puts "#{counter}. #{song.name}"
