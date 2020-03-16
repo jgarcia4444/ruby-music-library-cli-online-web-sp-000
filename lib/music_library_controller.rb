@@ -25,7 +25,7 @@ class MusicLibraryController
     songs = Song.all.sort {|x, y| x <=> y}
     counter = 1
     songs.each do |song|
-      
+      puts "#{counter}. #{song.name}"
     end
   end
 
