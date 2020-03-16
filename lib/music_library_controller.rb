@@ -26,4 +26,6 @@ class MusicLibraryController
     print songs
   end
 
+  list_songs
+
 end
