@@ -74,7 +74,8 @@ class MusicLibraryController
 
     user_input = gets.strip
 
-    
+    if user_input.to_i < Artist.songs.size
+    end
 
   end
 
