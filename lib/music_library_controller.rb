@@ -17,8 +17,13 @@ class MusicLibraryController
     puts "What would you like to do?"
     user_input = gets.strip
     while user_input != "exit"
-      call
+      user_input = gets.strip
     end
+  end
+
+  def list_songs
+    songs = Song.all.sorted
+    print songs
   end
 
 end
