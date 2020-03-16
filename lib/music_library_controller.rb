@@ -49,7 +49,7 @@ class MusicLibraryController
       chosen_artist = Artist.all.detect {|artist| artist.name == user_input}
       artist_songs = chosen_artist.songs
       artist_songs.sort {|x,y| x.name <=> y.name}.each_with_index do |song, i|
-        puts "#{i + 1} song.name"
+        puts "#{i + 1} #{song.name}"
       end
     end
   end
