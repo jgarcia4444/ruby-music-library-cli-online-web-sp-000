@@ -23,7 +23,9 @@ class MusicLibraryController
 
   def list_songs
     songs = Song.all.sort {|x, y| x <=> y}
-
+    counter = 1
+    songs.each do
+    end
   end
 
 end
